@@ -5,9 +5,9 @@
 </div>
 
 ## Overview
-The name <strong>Prometheus</strong> was chosen to represent the Titan’s symbolic gift of fire, a symbol of knowledge, power, and progress to humanity. Just as Prometheus brought fire to spark human progress, this tool provides users with the means to create complex, secure passwords and raise awareness about password breaches. The password generator is designed to help users create complex passwords and raise awareness about compromised credentials through breach monitoring.
+The name <strong>Prometheus</strong> was chosen to represent the Titan’s symbolic gift of fire, a symbol of knowledge, power, and progress to humanity. Just as Prometheus brought fire to spark human progress, this tool provides users with the means to create complex, secure passwords and raise awareness about password breaches. 
 
-By improving cybersecurity practices, this initiative aims to contribute to a safer digital environment, emphasizing the importance of proactive measures in protecting personal information and advancing overall online safety.
+The password generator is designed to help users create complex passwords and raise awareness about compromised credentials through breach monitoring. By improving cybersecurity practices, this initiative aims to contribute to a safer digital environment, emphasizing the importance of proactive measures in protecting personal information and advancing overall online safety.
 
 ## Technologies 
 
@@ -17,6 +17,7 @@ By improving cybersecurity practices, this initiative aims to contribute to a sa
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
 ![HTML (JSX)](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)  
+![ShadCN](https://img.shields.io/badge/shadcn%2Fui-303030?style=for-the-badge&logo=shadcnui&logoColor=white)
 
 ### Password Logic
 ![Custom JS Functions](https://img.shields.io/badge/Custom_JS_Functions-000000?style=for-the-badge&logo=javascript&logoColor=white)  
