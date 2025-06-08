@@ -53,7 +53,7 @@ export function AccordionFAQ() {
         <AccordionTrigger className="text-white">How often should I update my passwords?</AccordionTrigger>
         <AccordionContent className="text-zinc-300 pr-10 w-full leading-relaxed">
           <p>
-            It's recommended to update your passwords every 3–6 months, especially for critical accounts like email, banking, or cloud storage. Prometheus makes it easy to regularly create secure replacements.
+            It&apos;s recommended to update your passwords every 3–6 months, especially for critical accounts like email, banking, or cloud storage. Prometheus makes it easy to regularly create secure replacements.
           </p>
         </AccordionContent>
       </AccordionItem>
