@@ -64,6 +64,11 @@ The live site can be viewed here: https://prometheus-forge.vercel.app/
 	│     └───layout.js
 	│     └───page.js
 	│
+	├───component/
+	│		└───custom/
+	│		 	└───accordionFAQ.js
+	│		└───ui/
+	│		 	└───accordion.jsx
 	├───lib/
 	│	└───utils.js
 	│
