@@ -26,7 +26,7 @@ export function AccordionFAQ() {
         <AccordionTrigger className="text-white">How to generate a strong password with Prometheus?</AccordionTrigger>
         <AccordionContent className="text-zinc-300 pr-10 w-full leading-relaxed">
           <p>
-            It takes no effort to generate a password on the go with Prometheus. Set the desired length and complexity, and click "Generate". This will create a strong password that meets your specifications.
+            It takes no effort to generate a password on the go with Prometheus. Set the desired length and complexity, and click &quot;Generate&quot; This will create a strong password that meets your specifications.
           </p>
         </AccordionContent>
       </AccordionItem>
