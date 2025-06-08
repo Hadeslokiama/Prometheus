@@ -44,7 +44,7 @@ export function AccordionFAQ() {
         <AccordionTrigger className="text-white">How to use the password generator?</AccordionTrigger>
         <AccordionContent className="text-zinc-300 pr-10 w-full leading-relaxed">
           <p>
-            Using the password generator is simple. Just set your desired password length and complexity, then click "Generate". The generator will create a strong password that you can copy and use immediately.
+            Using the password generator is simple. Just set your desired password length and complexity, then click &quot;Generate&quot;. The generator will create a strong password that you can copy and use immediately.
           </p>
         </AccordionContent>
       </AccordionItem>
