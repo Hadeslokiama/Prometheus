@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/fonts/TT Hoves Pro Trial Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('/fonts/TT Hoves Pro Trial Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url('/fonts/BasisGrotesqueArabicPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Basis Grotesque';
+  src: url('/fonts/BasisGrotesqueArabicPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body), 'TT Hoves', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-heading), 'Basis Grotesque', ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  /*
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  */
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.1663 0.0064 300.87); /* BG: #0f0e11 */
+  --foreground: oklch(1 0 0); /* Headers: #ffffff */
+  --card: oklch(0.2128 0.0015 197.06); /* 2nd BG: #181919 */
+  --card-foreground: oklch(1 0 0); /* Headers: #ffffff */
+  --popover: oklch(0.2533 0.0016 197.03); /* 2nd BG for popovers */
+  --popover-foreground: oklch(1 0 0); /* Headers: #ffffff */
+  --primary: oklch(0.9333 0.1675 111.07); /* Accents: #eef35f */
+  --primary-foreground: oklch(0.1663 0.0064 300.87); /* Dark text on accent */
+  --secondary: oklch(0.2128 0.0015 197.06); /* 2nd BG: #181919 */
+  --secondary-foreground: oklch(1 0 0); /* Headers: #ffffff */
+  --muted: oklch(0.2533 0.0016 197.03); /* 2nd BG for muted elements */
+  --muted-foreground: oklch(0.7031 0.0104 273.3); /* Body Text: #9d9fa6 */
+  --accent: oklch(0.9333 0.1675 111.07); /* Accents: #eef35f */
+  --accent-foreground: oklch(0.1663 0.0064 300.87); /* Dark text on accent */
+  --destructive: oklch(0.704 0.191 22.216); /* Keep default red for errors */
+  --border: oklch(0.2533 0.0016 197.03); /* 2nd BG for borders */
+  --input: oklch(0.2533 0.0016 197.03); /* 2nd BG for inputs */
+  --ring: oklch(0.9333 0.1675 111.07); /* Accent for focus rings */
+  
+  /* Chart colors - comment out if not using charts 
+  --chart-1: oklch(0.9333 0.1675 111.07); 
+  --chart-2: oklch(0.7031 0.0104 273.3); 
+  --chart-3: oklch(1 0 0); 
+  --chart-4: oklch(0.6 0.118 184.704); 
+  --chart-5: oklch(0.769 0.188 70.08); 
+  */
+
+  /* Sidebar colors - using color scheme */
+  --sidebar: oklch(0.2533 0.0016 197.03); /* 2nd BG */
+  --sidebar-foreground: oklch(1 0 0); /* Headers */
+  --sidebar-primary: oklch(0.9333 0.1675 111.07); /* Accent */
+  --sidebar-primary-foreground: oklch(0.1663 0.0064 300.87); /* Dark on accent */
+  --sidebar-accent: oklch(0.2533 0.0016 197.03); /* 2nd BG */
+  --sidebar-accent-foreground: oklch(1 0 0); /* Headers */
+  --sidebar-border: oklch(0.2533 0.0016 197.03); /* 2nd BG */
+  --sidebar-ring: oklch(0.9333 0.1675 111.07); /* Accent */
+}
+/*
+.dark {
+  --background: oklch(0.087 0.007 236.62); 
+  --foreground: oklch(0.975 0.003 247.86); 
+  --card: oklch(0.241 0.007 236.62); 
+  --card-foreground: oklch(0.975 0.003 247.86);
+  --popover: oklch(0.241 0.007 236.62);
+  --popover-foreground: oklch(0.975 0.003 247.86);
+  --primary: oklch(0.926 0.144 108.37); 
+  --primary-foreground: oklch(0.087 0.007 236.62);
+  --secondary: oklch(0.241 0.007 236.62);
+  --secondary-foreground: oklch(0.975 0.003 247.86);
+  --muted: oklch(0.675 0.009 270.23);
+  --muted-foreground: oklch(0.975 0.003 247.86);
+  --accent: oklch(0.926 0.144 108.37);
+  --accent-foreground: oklch(0.087 0.007 236.62);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+*/
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'TT Hoves', ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-body {
+    font-family: 'TT Hoves', ui-sans-serif, system-ui, sans-serif;
+  }
+  
+  .font-heading {
+    font-family: 'Basis Grotesque', ui-serif, Georgia, serif;
+  }
+
+   .text-highlight {
+    color: oklch(0.9333 0.1675 111.07); 
+  }
+  
+  .bg-highlight {
+    background-color: oklch(0.9333 0.1675 111.07); 
+  }
+}

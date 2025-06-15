@@ -14,13 +14,13 @@ The password generator is designed to help users create complex passwords and ra
 ### Frontend
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)  
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_ui-3b82f6?style=for-the-badge&logo=tailwind-css&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)  
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML (JSX)](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)  
 ![ShadCN](https://img.shields.io/badge/shadcn%2Fui-303030?style=for-the-badge&logo=shadcnui&logoColor=white)
 
 ### Password Logic
-![Custom JS Functions](https://img.shields.io/badge/Custom_JS_Functions-000000?style=for-the-badge&logo=javascript&logoColor=white)  
+![Custom TS Functions](https://img.shields.io/badge/Custom_TS_Functions-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Zxcvbn](https://img.shields.io/badge/zxcvbn-4A90E2?style=for-the-badge&logo=javascript&logoColor=white)  
 ![HaveIBeenPwned API](https://img.shields.io/badge/HaveIBeenPwned-FF6600?style=for-the-badge&logo=api&logoColor=white)  
 
@@ -48,29 +48,22 @@ The live site can be viewed here: https://prometheus-forge.vercel.app/
 │		└───static/
 │		└───other config files
 │
+└───app
+│	   └───favicon.ico
+│	   └───globals.css
+│	   └───layout.txs
+│	   └───page.txs
+│
+└───components/
+│		└───ui/
+│
+└───lib
+│		└───utils.ts
+│
 ├───node_modules/
 │
 ├───public/
-│		 └───file.svg
-│		 └───globe.svg
-│		 └───next.svg
-│		 └───vercel.svg
-│		 └───window.svg
+│		└───fonts/
 │
-└───src/
-	├───app/
-	│     └───favicon.ico
-	│     └───globals.css
-	│     └───layout.js
-	│     └───page.js
-	│
-	├───component/
-	│		└───custom/
-	│		 	└───accordionFAQ.js
-	│		└───ui/
-	│		 	└───accordion.jsx
-	├───lib/
-	│	└───utils.js
-	│
-	└───other config files
+└───other config files
 ```
